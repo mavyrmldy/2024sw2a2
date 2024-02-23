@@ -11,23 +11,24 @@ public class Hello {
         System.out.println(cont + " : " + nome);
 
         Pessoa p1 = new Pessoa();
+        
+        
+        p1.setNome ("Carlos");
+        p1.setIdade (18);
 
-        p1.nome = "Carlos";
-        p1.idade = 18;
+        System.out.println(p1.getNome() + " : " + p1.getIdade());
 
-        System.out.println(p1.nome + " : " + p1.idade);
+       // Pessoa p2 = p1;
+      //  p2.setNome ("Mateus"); 
 
-        Pessoa p2 = p1;
-        p2.nome = "Mateus"; 
+       // System.out.println(p2.nome);
+      //  System.out.println(p1.nome);
 
-        System.out.println(p2.nome);
-        System.out.println(p1.nome);
+      //Pessoa p3 = new Pessoa();
+     //   p3.nome = "Zoe";
+     //   p3.idade = 5;
 
-        Pessoa p3 = new Pessoa();
-        p3.nome = "Zoe";
-        p3.idade = 5;
-
-        System.out.println(p1.verificarMarioridade());
-        System.out.println(p3.verificarMarioridade());
+    //    System.out.println(p1.verificarMarioridade());
+    //    System.out.println(p3.verificarMarioridade());
     }
 }
